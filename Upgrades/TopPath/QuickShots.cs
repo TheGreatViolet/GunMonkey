@@ -11,7 +11,7 @@ namespace GunMonkey.Upgrades.BottomPath
     public override int Tier => 1;
     public override int Cost => 300;
 
-    public override string DisplayName => "QuickShots";
+    public override string DisplayName => "Quick Shots";
     public override string Description => "Gun Monkey shoots slightly faster";
 
     public override string Portrait => base.Portrait; // TODO: Add portrait

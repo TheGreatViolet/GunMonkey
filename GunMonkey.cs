@@ -33,9 +33,9 @@ public class GunMonkey : ModTower
   public override string Description => "A gun weilding monkey";
   public override string TowerSet => TowerSetType.Military;
 
-  public override int TopPathUpgrades => 1;
-  public override int MiddlePathUpgrades => 1;
-  public override int BottomPathUpgrades => 1;
+  public override int TopPathUpgrades => 2;
+  public override int MiddlePathUpgrades => 2;
+  public override int BottomPathUpgrades => 2;
 
   // TODO: Add icon and portrait
   // public override string Icon => "GunMonkeyIcon";
@@ -43,17 +43,17 @@ public class GunMonkey : ModTower
 
   public override void ModifyBaseTowerModel(TowerModel towerModel)
   {
-    var range = 50;
+    var range = 40;
 
     towerModel.range = range;
     var attackModel = towerModel.GetAttackModel();
     attackModel.range = range;
 
     var weapon = attackModel.weapons[0];
-    weapon.rate = 0.95f;
+    weapon.rate = 1.10f;
 
     var projectile = weapon.projectile;
-    projectile.pierce = 10;
+    projectile.pierce = 1;
 
     var damagaModel = projectile.GetDamageModel();
     damagaModel.damage = 1;
