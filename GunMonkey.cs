@@ -35,7 +35,7 @@ public class GunMonkey : ModTower
 
   public override int TopPathUpgrades => 2;
   public override int MiddlePathUpgrades => 2;
-  public override int BottomPathUpgrades => 2;
+  public override int BottomPathUpgrades => 3;
 
   // TODO: Add icon and portrait
   // public override string Icon => "GunMonkeyIcon";

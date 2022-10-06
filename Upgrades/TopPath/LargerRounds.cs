@@ -19,8 +19,8 @@ namespace GunMonkey.Upgrades.BottomPath
     public override void ApplyUpgrade(TowerModel towerModel)
     {
       var weapon = towerModel.GetWeapon().projectile;
-      weapon.pierce = weapon.pierce * 1.25f;
-      weapon.GetDamageModel().damage = 2;
+      weapon.pierce++;
+      weapon.GetDamageModel().damage++;
     }
   }
 }
